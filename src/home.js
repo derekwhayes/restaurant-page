@@ -6,6 +6,9 @@ const home = () => {
     const restaurantImg = document.createElement('img');
     restaurantImg.src = restImage;
 
+    const textGroupDiv = document.createElement('div');
+    textGroupDiv.classList.add('text-group');
+
     const header = document.createElement('h1');
     header.textContent = 'Generic Restaurant';
 
@@ -13,8 +16,9 @@ const home = () => {
     text.textContent = 'This is a webpage for a generic restaurant!';
 
     content.append(restaurantImg);
-    content.append(header);
-    content.append(text);
+    content.append(textGroupDiv);
+    textGroupDiv.append(header);
+    textGroupDiv.append(text);
 };
 
 export { home };
