@@ -1,1 +1,3 @@
-alert('JavaScript is running!');
+import { home } from "./home.js";
+
+home();
