@@ -23,8 +23,8 @@ const menu = () => {
     const gratuityItem = document.createElement('li');
     gratuityItem.innerText = 'Generic required gratuity - 6000%';
 
-    content.append(menuImg);
     content.append(menuDiv);
+    content.append(menuImg);
     menuDiv.append(header);
     menuDiv.append(list);
     list.append(foodItem);
